@@ -4,9 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TUP LC2 - TP Integrador</title>
-    <link href="css/common.css">
+    <title>Clima App</title>
+    <link rel="icon" href="img/icon.png">
+    <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/PAGES/help.css">
+
+
 </head>
 
 <body>
@@ -16,30 +19,43 @@
         </h1>
         <nav>
             <ul>
-                <li class="current-page"><a href="#">Mi App</a></li>
-                <li><a href="/add-city.html">Agregar Ciudad</a></li>
-                <li><a href="/help.html">Ayuda</a></li>
+                <li><a href="./index.html">Clima</a></li>
+                <li><a href="./add-city.html">Agregar Ciudad</a></li>
+                <li class="current-page"><a href="#">Ayuda</a></li>
             </ul>
         </nav>
     </header>
     <!-- Contenido principal de la página -->
     <main>
         <h2>Ayuda Clima App 1.0</h2>
-        <p>Esta App te permite consultar el clima de una ciudad en particular utilizando la API de <a href="https://openweathermap.org/api" target="_blank">OpenWeatherMap</a></p>
-        <p>Para poder consultar el clima, primero debera <a href="./add-city.html">agregar una ciudad</a> y luego seleccionar la ciudad en cuestión desde la página <a href="./index.html">Clima</a></p>
         <section>
-            <form action="">
+            <div>
+                <p>
+                    Esta App te permite consultar el clima de una ciudad en particular utilizando la API de
+                    <a href="https://openweathermap.org/api" target="_blank">OpenWeatherMap</a>
+                </p>
+                <p>
+                    Para poder consultar el clima, primero debera <a href="./add-city.html">agregar una ciudad</a> y luego seleccionar la ciudad en cuestión desde la página <a href="./index.html">Clima</a>
+                </p>
+            </div>
+        </section>
+        <section>
+            <form class="help" action="">
                 <label for="name">Nombre:</label>
-                <input id="name" name="name" type="text"><br>
+                <input id="name" name="name" type="text">
 
                 <label for="email">Email:</label>
-                <input id="email" name="email" type="email"><br>
+                <input id="email" name="email" type="email">
 
-                <label for="mesaje">Mensaje:</label>
-                <textarea id="mesaje" name="mesaje" cols="30" rows="10"></textarea><br>
+                <label for="textarea">Mensaje:</label>
+                <textarea id="textarea" name="metextarea" cols="30" rows="10"></textarea>
 
-                <button>Limpiar</button>
-                <button>Enviar</button>
+                <p>
+                    <button>Limpiar</button>
+                    <button>Enviar</button>
+                </p>
+
+                <p class="error">Ingrese un Email valido</p>
             </form>
         </section>
     </main>
