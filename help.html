@@ -8,6 +8,8 @@
     <link rel="icon" href="img/icon.png">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/PAGES/help.css">
+    <script src="js/common.js" defer></script>
+    <script src="js/pages/help.js" defer></script>
 
 
 </head>
@@ -27,37 +29,38 @@
     </header>
     <!-- Contenido principal de la página -->
     <main>
-        <h2>Ayuda Clima App 1.0</h2>
-        <section>
-            <div>
-                <p>
-                    Esta App te permite consultar el clima de una ciudad en particular utilizando la API de
-                    <a href="https://openweathermap.org/api" target="_blank">OpenWeatherMap</a>
-                </p>
-                <p>
-                    Para poder consultar el clima, primero debera <a href="./add-city.html">agregar una ciudad</a> y luego seleccionar la ciudad en cuestión desde la página <a href="./index.html">Clima</a>
-                </p>
-            </div>
-        </section>
-        <section>
-            <form class="help" action="">
-                <label for="name">Nombre:</label>
-                <input id="name" name="name" type="text">
+        <div class="helpContainer">
+            <h2>Ayuda Clima App 1.0</h2>
+            <section>
+                <div>
+                    <p>
+                        Esta App te permite consultar el clima de una ciudad en particular utilizando la API de
+                        <a href="https://openweathermap.org/api" target="_blank">OpenWeatherMap</a>
+                    </p>
+                    <p>
+                        Para poder consultar el clima, primero debera <a href="./add-city.html">agregar una ciudad</a> y luego seleccionar la ciudad en cuestión desde la página <a href="./index.html">Clima</a>
+                    </p>
+                </div>
+            </section>
+            <section>
+                <form class="help" action="">
+                    <label for="name">Nombre:</label>
+                    <input id="name" name="name" type="text">
 
-                <label for="email">Email:</label>
-                <input id="email" name="email" type="email">
+                    <label for="email">Email:</label>
+                    <input id="email" name="email" type="email">
 
-                <label for="textarea">Mensaje:</label>
-                <textarea id="textarea" name="metextarea" cols="30" rows="10"></textarea>
+                    <label for="textarea">Mensaje:</label>
+                    <textarea id="textarea" name="metextarea" cols="30" rows="10"></textarea>
 
-                <p>
-                    <button>Limpiar</button>
-                    <button>Enviar</button>
-                </p>
+                    <p>
+                        <button>Limpiar</button>
+                        <button>Enviar</button>
+                    </p>
 
-                <p class="error">Ingrese un Email valido</p>
-            </form>
-        </section>
+                    <p hidden class="alert error">Ingrese un Email valido</p>
+                </form>
+            </section>
     </main>
     <footer>
         <p>

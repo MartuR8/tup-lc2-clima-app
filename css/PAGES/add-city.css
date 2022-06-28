@@ -11,6 +11,8 @@
     margin: 10px;
     text-align: center;
     align-self: normal;
+    flex-direction: column;
+    align-items: center;
 }
 
 p.success {

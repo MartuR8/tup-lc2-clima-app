@@ -6,15 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clima App</title>
     <link rel="icon" href="img/icon.png">
+    <!-- Estilos CSS -->
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/PAGES/index.css">
+    <script src="js/common.js" defer></script>
+    <script src="js/pages/index.js" defer></script>
 </head>
 
 <body>
     <header>
         <h1>
-            <img src="img/clima.png"><span>Clima App</span>
-
+            <img src="img/clima.png" alt="Icono de clima"><span>Clima App</span>
         </h1>
         <nav>
             <ul>
@@ -28,28 +30,15 @@
     <main>
         <h2>El Clima Ahora</h2>
         <section id="form-city-list">
-            <!-- Sección donde se debe colocar el formulario, con el select y el
-botón de consultar -->
+            <!-- Sección donde se debe colocar el formulario, con el select y el botón de consultar -->
             <form action="">
-                <select name="select-city" id="select-city">
-                <option value="" disabled selected>seleccionar Ciudad</option>
-                <option value="Rosario">Rosario</option>
-                <option value="Rafaela">Rafaela</option>
-            </select>
-                <button>consultar</button>
+                <select name="SeleccionarCiudad" id="SeleccionarCiudad">
+                    </select>
+                <button type="button" id="ConsultarClima">Consultar</button>
             </form>
         </section>
         <section id="section-weather-result">
             <!-- Sección donde se debe mostrar el clima de la ciudad -->
-            <div class="card">
-                <h3>Rosario</h3>
-                <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="imagen">
-                <p>Temperatura: 25,31°</p>
-                <p>Sensacion Termica: 24,65°</p>
-                <p>Humedad: 29%</p>
-                <p>Velocidad del viento: 4,63km/h</p>
-                <p>Presion: 1011</p>
-            </div>
         </section>
     </main>
     <footer>

@@ -16,6 +16,10 @@
     --color-error: #dc3545;
 }
 
+#logo-clima {
+    margin-right: 25px;
+}
+
 body {
     height: 100%;
     width: 100%;
@@ -38,8 +42,8 @@ header {
     top: 0;
     width: 100%;
     background: var(--color-gradient);
-    border-bottom-left-radius: 45px;
-    border-bottom-right-radius: 45px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
 
 nav>ul {
