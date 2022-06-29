@@ -1,14 +1,4 @@
-let selector = document.getElementById("seleccionarCiudad");
-
-function getCitiesFromLocalStorage() {
-    let cities = localStorage.getItem("CITIES");
-    if (cities) {
-        cities = JSON.parse(cities);
-    } else {
-        cities = [];
-    }
-    return cities;
-}
+let selector = document.getElementById("Selec_City");
 
 function addCitiesToSelector() {
     let cities = getCitiesFromLocalStorage();
@@ -27,7 +17,7 @@ function createCard() {
     consultAPI(selector.value);
 }
 
-let consultButton = document.getElementById("consultarClima");
+let consultButton = document.getElementById("ConsultarClima");
 consultButton.addEventListener("click", createCard)
 
 addCitiesToSelector();

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clima App</title>
     <link rel="icon" href="img/icon.png">
+    <!-- Estilos CSS -->
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/PAGES/add-city.css">
     <script src="js/common.js" defer></script>
@@ -29,13 +30,11 @@
     <main>
         <h2>Agregar ciudad</h2>
         <section class="add-city">
-            <form class="add-city" id="add-city" action="">
-                <label for="Ingresarciudad">Ingrese la ciudad a agregar:</label>
+            <form id="add-city" class="add-city" action="">
+                <label for="inputCity">Ingrese la ciudad a agregar:</label>
                 <input id="inputCity" name="inputCity" type="text">
                 <button type="button" id="buttonAdd">Agregar</button>
             </form>
-        </section>
-        <section>
             <div id="messajeBox" class="add-city">
             </div>
         </section>

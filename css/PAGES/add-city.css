@@ -15,14 +15,14 @@
     align-items: center;
 }
 
-p.success {
+.success {
     background-color: var(--color-success);
 }
 
-p.error {
+.error {
     background-color: var(--color-error);
 }
 
-p.warning {
+.warning {
     background-color: var(--color-warning);
 }

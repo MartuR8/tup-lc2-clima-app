@@ -1,13 +1,13 @@
-async function validateCity(nuevaciudad) {
+async function validateCity(newCity) {
     let cities = getCitiesFromLocalStorage();
 
     for (let i = 0; i < cities.length; i++) {
-        if (nuevaciudad == cities[i]) {
+        if (newCity == cities[i]) {
             return "warning";
         };
     };
 
-    if (await consultAPI(nuevaciudad) == "error") {
+    if (await consultAPI(newCity) == "error") {
         return "error";
     } else {
         return "success";
@@ -16,27 +16,27 @@ async function validateCity(nuevaciudad) {
 
 function removeMessage() {
     setTimeout(function() {
-        document.getElementsByClassName("Alert")[0].remove();
+        document.getElementsByClassName("alert")[0].remove();
     }, 3000);
 }
 
 async function addCityToLocalStorage() {
     let cities = getCitiesFromLocalStorage();
-    let nuevaciudad = document.getElementById("IngresarCiudad").value;
-    nuevaciudad = nuevaciudad.toUpperCase()
+    let newCity = document.getElementById("inputCity").value;
+    newCity = newCity.toUpperCase()
 
-    switch (await validateCity(nuevaciudad)) {
-        case "success":
-            cities.push(nuevaciudad);
+    switch (await validateCity(newCity)) {
+        case ".success":
+            cities.push(newCity);
             localStorage.setItem("CITIES", JSON.stringify(cities));
             document.getElementById("messajeBox").innerHTML += successMessage;
             removeMessage();
             break;
-        case "warning":
+        case ".warning":
             document.getElementById("messajeBox").innerHTML += warningMessage;
             removeMessage();
             break;
-        case "error":
+        case ".error":
             document.getElementById("messajeBox").innerHTML += errorMessage;
             removeMessage();
             break;
