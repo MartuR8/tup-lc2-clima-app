@@ -3,7 +3,8 @@ function getCitiesFromLocalStorage() {
 
     if (cities) {
         cities = JSON.parse(cities);
-    } else {
+    } 
+    else {
         cities = [];
     }
     return cities;
