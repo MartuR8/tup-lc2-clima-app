@@ -26,17 +26,17 @@ async function addCityToLocalStorage() {
     newCity = newCity.toUpperCase()
 
     switch (await validateCity(newCity)) {
-        case ".success":
+        case "success":
             cities.push(newCity);
             localStorage.setItem("CITIES", JSON.stringify(cities));
             document.getElementById("messajeBox").innerHTML += successMessage;
             removeMessage();
             break;
-        case ".warning":
+        case "warning":
             document.getElementById("messajeBox").innerHTML += warningMessage;
             removeMessage();
             break;
-        case ".error":
+        case "error":
             document.getElementById("messajeBox").innerHTML += errorMessage;
             removeMessage();
             break;
